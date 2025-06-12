@@ -33,7 +33,7 @@
     },
     "remediateSettings": {
         "workflowRules": {
-            "enabled": false
+            "enabled": true
         },
         "enableRenovate": true,
         "packageRules": [
