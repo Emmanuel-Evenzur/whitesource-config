@@ -1,31 +1,3 @@
 {
-  "repoConfigMode": "nowhitesourceFile",   // les repos héritent tous de cette configuration globale
-
-  "scanSettings": {
-    "configMode": "INHERITED",      // impose l'héritage, ignore les .whitesource locaux
-    "enableSCA": true,               // Dependency (SCA) Scan activé
-    "enableLicenseViolations": true, // License Scan activé
-    "enableIaC": true,               // IaC Scan activé
-    "enableReachability": true,
-    "exploitability": true,
-    "baseBranches": ["main"]        // branches sur lesquelles déclencher les checks
-  },
-
-  "checkRunSettings": {
-    "useMendCheckNames": true,
-    "vulnerableCheckRunConclusionLevel": "failure",   // Mend Security Check
-    "licenseCheckRunConclusionLevel": "failure",      // Mend License Check
-    "iacCheckRunConclusionLevel": "failure"           // Mend IaC Check
-  },
-
-  "scanSettingsSAST": {
-    "enableScan": true,
-    "scanPullRequests": true
-  },
-
-  "checkRunSettingsSAST": {
-    "useMendCheckNames": true,
-    "checkRunConclusionLevel": "failure",
-    "severityThreshold": "high"
-  }
+  "repoConfigMode": "createOnboardingPR"
 }
