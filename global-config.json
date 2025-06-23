@@ -1,3 +1,23 @@
 {
-  "repoConfigMode": "createOnboardingPR"
+  "repoConfigMode": "nowhitesourceFile",
+  "scanSettings": {
+    "configMode": "INHERITED",
+    "enableSCA": true,
+    "enableLicenseViolations": true,
+    "enableIaC": true,
+    "enableReachability": true,
+    "exploitability": true,
+    "baseBranches": ["main"]
+  },
+  "checkRunSettings": {
+    "useMendCheckNames": true,
+    "vulnerableCheckRunConclusionLevel": "failure",
+    "licenseCheckRunConclusionLevel": "failure",
+    "iacCheckRunConclusionLevel": "failure"
+  },
+  "scanSettingsSAST": { "enableScan": true },
+  "checkRunSettingsSAST": {
+    "useMendCheckNames": true,
+    "checkRunConclusionLevel": "failure"
+  }
 }
