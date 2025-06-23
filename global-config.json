@@ -15,9 +15,17 @@
     "licenseCheckRunConclusionLevel": "failure",
     "iacCheckRunConclusionLevel": "failure"
   },
-  "scanSettingsSAST": { "enableScan": true },
+  "scanSettingsSAST": {
+    "enableScan": true,
+    "enableRemediation": true,
+    "scanPullRequests": true,
+    "incrementalScan": true,
+    "baseBranches": ["main"],
+    "snippetSize": 10
+  },
   "checkRunSettingsSAST": {
     "useMendCheckNames": true,
-    "checkRunConclusionLevel": "failure"
+    "checkRunConclusionLevel": "failure",
+    "severityThreshold": "high"
   }
 }
