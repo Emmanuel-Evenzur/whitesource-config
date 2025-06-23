@@ -21,6 +21,7 @@
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "licenseCheckRunConclusionLevel": "failure",
+    "iacCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
     "strictMode": "warning",
     "useMendCheckNames": true
