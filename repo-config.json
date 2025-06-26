@@ -8,14 +8,14 @@
     "enableIaC": true,
     "enableReachability": true,
     "exploitability": true,
-    "baseBranches": ["main"]
+    "baseBranches": ["main", "master"]
   },
   "scanSettingsSAST": {
     "enableScan": true,
     "enableRemediation": true,
     "scanPullRequests": true,
     "incrementalScan": true,
-    "baseBranches": ["main"],
+    "baseBranches": ["main", "master"],
     "snippetSize": 10
   },
   "checkRunSettings": {
@@ -45,8 +45,8 @@
     "packageRules": [
       {
         "groupName": "Mend: high confidence minor and patch dependency updates",
-        "matchUpdateTypes": ["minor","patch"],
-        "matchConfidence": ["very high","high"]
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchConfidence": ["very high", "high"]
       },
       {
         "matchConfidence": ["low"],
@@ -59,6 +59,6 @@
         "commitMessagePrefix": "[NEUTRAL] "
       }
     ],
-    "extends": ["config:recommended","mergeConfidence:all-badges"]
+    "extends": ["config:recommended", "mergeConfidence:all-badges"]
   }
 }
