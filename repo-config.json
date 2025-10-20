@@ -17,7 +17,7 @@
     "incrementalScan": true,
     "baseBranches": ["main", "master"],
     "snippetSize": 10,
-    "findingSuppressions": "enabled"
+    "findingSuppressions": "requireApproval"
 }
   },
   "checkRunSettings": {
