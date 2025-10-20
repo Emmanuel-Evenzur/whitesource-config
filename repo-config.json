@@ -16,7 +16,9 @@
     "scanPullRequests": true,
     "incrementalScan": true,
     "baseBranches": ["main", "master"],
-    "snippetSize": 10
+    "snippetSize": 10,
+    "findingSuppressions": "enabled"
+}
   },
   "checkRunSettings": {
     "useMendCheckNames": true,
